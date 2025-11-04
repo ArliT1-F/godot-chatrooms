@@ -45,6 +45,20 @@ emoji_menu_enabled = false
 virtual_keyboard_enabled = false
 selecting_enabled = false
 
+[node name="StatusContainer" type="HBoxContainer" parent="HBoxContainer/Container_Left/ColorRect/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="StatusIndicator" type="ColorRect" parent="HBoxContainer/Container_Left/ColorRect/VBoxContainer/StatusContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+color = Color(0.8, 0.2, 0.2, 1)
+
+[node name="StatusLabel" type="Label" parent="HBoxContainer/Container_Left/ColorRect/VBoxContainer/StatusContainer"]
+layout_mode = 2
+text = "Disconnected"
+horizontal_alignment = 1
+
 [node name="UI_Address" type="LineEdit" parent="HBoxContainer/Container_Left"]
 layout_mode = 2
 text = "127.0.0.1"
